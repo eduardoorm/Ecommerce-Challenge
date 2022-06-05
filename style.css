@@ -1,0 +1,206 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+.container__navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10em;
+}
+
+.container__navbar__left{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+.left__title{
+    display: flex;
+    align-items: center;
+}
+
+.container__navbar__left__title>h1{
+    margin-left: 5px;
+}
+.azul{
+    color:#2A7AE4;
+}
+.container__navbar__left__search{
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+    height: 2.5em;
+    background-color: #F5F5F5 ;
+    border-radius:10px;
+    padding: 10px;
+}
+
+.btn{
+    padding: 10px;
+    width: 12em;
+    height: 3.2em;
+    cursor: pointer;
+}
+.btnLogin{
+    background-color:white ;
+    border:1px solid #2A7AE4;
+    color:#2A7AE4;
+}
+
+/*Products*/
+.container__products{
+ background-color: #F5F5F5;
+ padding: 5em 10em; 
+}
+.container__products__header{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.container__products__header__title{
+    font-weight: 700;
+    font-size: 30px;   
+}
+
+.btnBlue{
+    background-color:#2A7AE4;
+    color:white;
+    border:none;
+}
+
+/* 
+.container__products__galery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+.container__products__galery__item{
+    line-height: 1.5em;
+    margin-bottom: 3em;
+    width: 13%;
+    margin-right: 1em;
+}
+.container__products__galery__item > img{
+    width: 100%;
+    height: 8em;
+}
+.container__products__galery__item__price{
+    font-weight: 700;
+} */
+
+/*using grid*/
+.container__products__galery{
+    display: grid;
+    grid-template-columns: 16.75% 16.75% 16.75% 16.75% 16.75% 16.75%;
+}
+.container__products__galery__item{
+    margin: 1em 5px;
+}
+.container__products__galery__item__buttons{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.container__products__galery__item__buttons > button{
+    background-color: transparent;
+    border:none;
+    width: 1.6em;
+    height: 1.6em;
+    margin-top: 0.8em;
+    margin-right: 1.2em;
+    cursor:pointer;
+}
+.container__products__galery__item__buttons >button:nth-child(1){
+    margin-right: 2em;
+}
+
+.container__products__galery__item__image{
+    background: url("starwars.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 12em;
+    margin-bottom: 10px;
+}
+
+.btnImages-Gallery > img{
+    width: 100%;
+    height: 100%;
+}
+
+/*footer*/
+
+.container__footer{
+    display: flex;
+    padding: 5em 10em;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAF2FD;
+    height: 390px;
+}
+.footer__left__title{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+}
+.container__footer__pages{
+    width: 30%;
+    height: 100%;
+}
+.container__footer__pages__text{
+    margin:0em 1.5em;
+}
+.container__footer__pages> p:nth-child(2n){
+    margin: 2em 1.5em ;
+}
+.container__footer__pages__text>a{
+    color:black;
+    text-decoration: none;
+}
+.container__footer__pages__text> a:hover{
+    color:blue;
+}
+
+.container__footer__contact{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.container__footer__contact__title{
+    font-weight: 600;
+    width: 100%;
+}
+.container__footer__contact__form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#inputName{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1em;
+    border:none;
+}
+#inputMessage{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-bottom: 1em;
+    border:none;
+    resize: none;
+}
+
+.credit{
+    width: 100%;
+    padding:2em;
+    text-align: center;
+
+}
