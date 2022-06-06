@@ -257,9 +257,11 @@ box-sizing: border-box;
     color: #2A7AE4;
     font-size: 17px;
     font-weight:600;
-    width: 6em;
+    width: 7em;
     padding: 0px;
-    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
 
 .container__category__galery{
@@ -283,4 +285,39 @@ box-sizing: border-box;
     font-weight: 600;
     font-size: 18px;
     text-decoration: none;
+}
+
+/*Login*/
+.container__login{
+    width: 100%;
+    text-align: center;
+    background-color: #F5F5F5;
+    height:60vh ;
+    padding: 8% 0em;
+}
+.container__login__form{
+    width: 27%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container__login__form>input{
+    padding: 1em;
+    width: 100%;
+    border:none;
+    margin-bottom: 2em;
+    height: 3.5em;
+}
+
+.btnLogin{
+    width: 100%;
+    font-size: 14px;
+}
+
+.container__login__title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1.4em;
 }
