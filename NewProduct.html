@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eccomerce</title>
-    <link href="style.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eccomerce</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
 <body>
     <nav>
         <div class="container__navbar">
@@ -25,17 +25,19 @@
             </div>
         </div>
     </nav>
-    <section class="login">
-        <div class="container__login">
-            <p class="container__login__title">Iniciar Sesión</p>
-            <form class="container__login__form container__forms">
-                <input class="container__forms__input" inputLoginEmail" name="email" type="email" placeholder="Escriba su correo electrónico">
-                <input class="container__forms__input" inputLoginPassword" name="password" type="password" placeholder="Escriba su contraseña">
-                <button type="submit" class="btn btnBlue btnFull">Entrar</button>
+    <section>
+        <div class="container__addNewProduct">
+            <form class="container__forms container__addNewProduct__form">
+                <p class="container__addNewProduct__title">Agregar nuevo producto</p>
+                <input type="url"    class="container__forms__input" placeholder="Url de imagen">
+                <input type="text"   class="container__forms__input" placeholder="Categoria">
+                <input type="text"   class="container__forms__input" placeholder="Nombre del Producto">
+                <input type="number" class="container__forms__input" placeholder="Precio del Producto">
+                <textarea class="container__forms__textArea" placeholder="Descripción del producto"></textarea>
+                <button class="container__forms_button btn btnBlue" type="submit">Agregar Producto</button>
             </form>
-            
         </div>
-    </section>
+    </section>        
     <footer>
         <div class="container__footer">
                 <div class="footer__left__title">
@@ -62,6 +64,5 @@
             <p>Desarrollado con amor por Eduardo Ormeño para Alura Latam 💖</p>
         </div>
     </footer>
-    
 </body>
 </html>

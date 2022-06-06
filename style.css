@@ -49,7 +49,9 @@ box-sizing: border-box;
     border:1px solid #2A7AE4;
     color:#2A7AE4;
 }
-
+.btnFull{
+    width: 100%;
+}
 /*Products*/
 .container__products{
  background-color: #F5F5F5;
@@ -295,24 +297,37 @@ box-sizing: border-box;
     height:60vh ;
     padding: 8% 0em;
 }
-.container__login__form{
+
+/*FORMS*/
+.container__forms{
     width: 27%;
     margin: auto;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
-.container__login__form>input{
+.container__forms__input{
     padding: 1em;
     width: 100%;
     border:none;
     margin-bottom: 2em;
     height: 3.5em;
 }
-
-.btnLogin{
+.container__forms_button{
     width: 100%;
+    font-size: 14px;
+}
+
+.container__forms__textArea{
+    height: 9em;
+    resize: none;
+    margin-bottom: 2em;
+    border: none;
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.btnLogin{
     font-size: 14px;
 }
 
@@ -320,4 +335,18 @@ box-sizing: border-box;
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 1.4em;
+}
+
+/*Add New Product*/
+.container__addNewProduct{
+    width: 100%;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 4% 0em;
+}
+.container__addNewProduct__title{
+    font-size: 30px;
+    text-align: start;
+    margin-bottom: 1em;
+    font-weight: 600;
 }
