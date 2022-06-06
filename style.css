@@ -204,3 +204,83 @@ box-sizing: border-box;
     text-align: center;
 
 }
+
+/*Banner*/
+
+.container__banner{
+    width: 100%;
+    border:1px solid;
+    height: 40vh;
+    background-image: url("images/Hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -40px;
+    display: flex;
+    align-items: flex-end;
+    padding: 2% 10%;
+}
+.container__banner__info{
+    width: 50%;
+}
+
+.continer__banner__title{
+    font-size: 60px;
+    color:white;
+    font-weight: 700;
+    margin-bottom: 0.3em;
+}
+.continer__banner__subtitle{
+    font-size: 25px;
+    color:white;
+    font-weight: 600;
+    margin-bottom: 0.7em;
+}
+
+.btnViewConsole{
+    width: 8em;
+}
+
+/*Category*/
+
+.container__category{
+    padding: 2% 10%;
+}
+.container__category__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.2em;
+}
+
+.btnSeeAll{
+    background-color: transparent;
+    border:none;
+    color: #2A7AE4;
+    font-size: 17px;
+    font-weight:600;
+    width: 6em;
+    padding: 0px;
+    text-align: end;
+}
+
+.container__category__galery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.container__category__item{
+    line-height: 25px;
+}
+.container__category__header__title{
+    font-size: 35px;
+}
+.container__category__item__price{
+    font-weight: 600;
+    font-size: 17px;
+}
+.container__category__item__showProduct{
+    color: #2A7AE4;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
