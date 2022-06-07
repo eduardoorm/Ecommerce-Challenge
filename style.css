@@ -3,6 +3,9 @@ margin: 0px;
 padding: 0px;
 box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
 
 .container__navbar{
     display: flex;
@@ -25,8 +28,11 @@ box-sizing: border-box;
 .container__navbar__left__title>h1{
     margin-left: 5px;
 }
-.azul{
+.blue{
     color:#2A7AE4;
+}
+.black{
+    color:black;
 }
 .container__navbar__left__search{
     display: flex;
@@ -123,7 +129,7 @@ box-sizing: border-box;
 }
 
 .container__products__galery__item__image{
-    background: url("starwars.png");
+    background: url("images/starwars.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
