@@ -31,8 +31,14 @@
         <div class="container__login">
             <p class="container__login__title">Iniciar Sesión</p>
             <form class="container__login__form container__forms">
-                <input class="container__forms__input" inputLoginEmail" name="email" type="email" placeholder="Escriba su correo electrónico">
-                <input class="container__forms__input" inputLoginPassword" name="password" type="password" placeholder="Escriba su contraseña">
+                <div class="input-container">
+                    <input class="container__forms__input" inputLoginEmail data-tipo="email" name="email" type="email" placeholder="Escriba su correo electrónico" required>
+                    <spam class="input-message-error">El campo no es válido</spam>
+                </div>
+                <div class="input-container">
+                    <input class="container__forms__input" inputLoginPassword data-tipo="password" name="password" type="password" placeholder="Escriba su contraseña" required>
+                    <span class="input-message-error">El campo no es válido</span>
+                </div>
                 <button type="submit" class="btn btnBlue btnFull">Entrar</button>
             </form>
             
