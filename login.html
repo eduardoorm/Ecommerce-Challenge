@@ -52,11 +52,21 @@
                     <p class="container__footer__pages__text"><a href="#">Anuncie aquí</a></p>
                 </div>
                 <div class="container__footer__contact">
-                    <p class="container__footer__contact__title">Hable con nosotros</p>
-                    <form class="container__footer__contact__form">
-                        <input name="name" id="inputName" type="text" placeholder="Nombre">
-                        <textarea id="inputMessage"  placeholder="Escribe tu mensaje"></textarea>
-                        <button type="submit" class="btn btnBlue">Enviar mensaje</button>
+                    <h2 class="container__footer__contact__title">Hable con nosotros</h2>
+                    <form class="container__footer__contact__form" action="./login.html">
+                        <fieldset>
+                           <div class="input-container">
+                                <label class="input-label" for="name">Nombre</label>
+                                <input name="name" id="name" type="text" placeholder="Nombre"  data-tipo="name" required>
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <div class="input-container">
+                                <label class="input-label" for="inputMessage">Mensaje</label>
+                                <textarea id="inputMessage"  placeholder="Escribe tu mensaje"  data-tipo="message" required></textarea>
+                                <span class="input-message-error">Este campo no es valido</span>
+                            </div>
+                            <button type="submit" class="btn btnBlue">Enviar mensaje</button>
+                        </fieldset>
                     </form>
                 </div>
         </div>   
@@ -64,6 +74,7 @@
             <p>Desarrollado con amor por Eduardo Ormeño para Alura Latam 💖</p>
         </div>
     </footer>
+    <script type="module" src="index.js"></script>
     
 </body>
 </html>

@@ -3,6 +3,7 @@ const textMessage = document.querySelector('#inputMessage');
 
 textMessage.addEventListener("blur",(input)=>{
     validity(input.target)
+    console.log("click");
 })
 
 inputName.addEventListener("blur",(input)=>{
