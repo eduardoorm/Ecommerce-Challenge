@@ -118,7 +118,7 @@ a{
 .container__products__galery__item__buttons > button{
     background-color: transparent;
     border:none;
-    width: 1.6em;
+    width: 1.3em;
     height: 1.6em;
     margin-top: 0.8em;
     margin-right: 1.2em;
@@ -191,7 +191,7 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
-#inputName{
+#name{
     width: 100%;
     padding: 10px;
     margin-bottom: 1em;
@@ -355,4 +355,77 @@ a{
     text-align: start;
     margin-bottom: 1em;
     font-weight: 600;
+}
+
+/*Detail Product*/
+.container__detail{
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    padding: 2em 10em;
+    background-color: #F5F5F5;
+    align-items: center;
+}
+
+.container__detail__img{
+    width: 50%;
+    height: 100%;
+    background-image: url("images/starwars.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -60px;
+}
+
+.container__detail__info{
+    width: 50%;
+    padding-left: 2em;
+    font-size: 18px;
+}
+
+.container__detail__info__title{
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+.bold{
+    font-weight: 600;
+}
+.margintBotton_05{
+    margin-bottom: 0.5em;
+}
+
+.bg_Gray{
+    background-color: #F5F5F5;
+}
+.inputSearch{
+    border:none;
+    padding: 0.2em;
+    width: 100%;
+}
+
+/*form message*/
+fieldset{
+    border:none;
+    width: 100%;
+}
+
+.input-message-error{
+    display: none;
+}
+
+.input-container--invalid{
+    color:red;
+}
+
+.input-container--invalid > #name {
+    border:1px solid red;
+    color:red;
+}
+
+.input-container--invalid > #inputMessage{
+    border:1px solid red;
+    color:red;
+}
+.input-container--invalid > .input-message-error{
+    display: block;
 }
