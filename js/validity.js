@@ -11,7 +11,6 @@ export function validity(input){
         input.parentElement.querySelector(".input-message-error").innerText=""
     }else{
         input.parentElement.classList.add("input-container--invalid")
-        console.log("input",input);
         input.parentElement.querySelector(".input-message-error").innerText= showMessageError(typeOfInput,input); 
     }
 }
