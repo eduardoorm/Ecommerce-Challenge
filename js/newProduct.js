@@ -10,9 +10,9 @@ inputLogin.forEach(input=>{
 })
 
 inputFile.addEventListener("change",(e)=>{
-    const containerUrlImg = document.querySelector(".url-file");
-    let urlImg = inputFile.files[0].name;
-    containerUrlImg.textContent= urlImg;
+    const containerImg = document.querySelector(".url-image");
+    const url = URL.createObjectURL(e.target.files[0]);
+	containerImg.src= url;
 })
 
 textDescriptionProduct.addEventListener("blur",(input)=>{

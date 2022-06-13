@@ -109,18 +109,22 @@ a{
 }
 .container__products__galery__item{
     margin: 1em 5px;
+    background: rgb(231, 231, 231);
+    line-height: 22px;
 }
 .container__products__galery__item__buttons{
     display: flex;
-    justify-content: flex-end;
+    justify-content:space-around;
     flex-wrap: wrap;
+    background: rgb(231, 231, 231);
+    padding: 0.3em;
+    margin-top: 0.5em;
 }
 .container__products__galery__item__buttons > button{
     background-color: transparent;
     border:none;
     width: 1.3em;
     height: 1.6em;
-    margin-top: 0.8em;
     margin-right: 1.2em;
     cursor:pointer;
 }
@@ -138,8 +142,8 @@ a{
 }
 
 .btnImages-Gallery > img{
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 90%;
 }
 
 /*footer*/
@@ -496,4 +500,13 @@ input[type="file"]{
 .url-file{
     font-size: 20px;
     padding: 0.5em;
+}
+
+/*container__products__galery__item__title*/
+.container__products__galery__item__title{
+   
+}
+
+.container__products__galery__item__price{
+    font-weight: 600;
 }

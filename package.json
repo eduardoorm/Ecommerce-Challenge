@@ -1,0 +1,19 @@
+{
+  "name": "ecommerce",
+  "version": "1.0.0",
+  "description": "challenge ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardoorm/Eccomerce-AluraLatam.git"
+  },
+  "author": "eduardo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardoorm/Eccomerce-AluraLatam/issues"
+  },
+  "homepage": "https://github.com/eduardoorm/Eccomerce-AluraLatam#readme"
+}

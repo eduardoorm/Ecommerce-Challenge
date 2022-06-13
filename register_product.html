@@ -29,31 +29,68 @@
     </nav>
     <section>
         <div class="container__addNewProduct">
-            <form class="container__forms container__addNewProduct__form">
+            <form class="container__forms container__addNewProduct__form" data-form action="./products.html">
                 <p class="container__addNewProduct__title">Agregar nuevo producto</p>
                 <div class="input-container">
                     <div class="container__forms__image">
                         <label for="src-file" class="drag-image">Arrastre para agregar una imagen para el producto</label>
                         <p class="text-center">O</p>
                         <label for="src-file" class="btn__searchImage">Busque en su computador</label>
-                        <input class="input-file" type="file" name="file" id="src-file"  required>
+                        <input
+                           class="input-file" 
+                           type="file" 
+                           name="file" 
+                           id="src-file"  
+                           data-url
+                           required>
                     </div>
+                    <img src="" class="url-image">
                     <div class="url-file"></div>
                 </div>
                 <div class="input-container">
-                    <input type="text"   name="category" id="category" class="container__forms__input" data-tipo="category" placeholder="Categoria" required> 
+                    <input 
+                        type="text"   
+                        name="category" 
+                        id="category" 
+                        class="container__forms__input" 
+                        data-tipo="category" 
+                        data-category
+                        placeholder="Categoria" 
+                        required> 
                     <span class="input-message-error"></span>
                 </div>
                 <div class="input-container">
-                    <input type="text"  name="nameProduct" id="nameProduct" class="container__forms__input" data-tipo="nameProduct" placeholder="Nombre del Producto" required>
+                    <input 
+                        type="text"  
+                        name="nameProduct" 
+                        id="nameProduct" 
+                        class="container__forms__input" 
+                        data-tipo="nameProduct" 
+                        data-product
+                        placeholder="Nombre del Producto" 
+                        required>
                     <span class="input-message-error"></span>
                 </div>
                 <div class="input-container">
-                    <input type="number" name="price" id="price" class="container__forms__input" data-tipo="price" placeholder="Precio del Producto" required>
+                    <input 
+                        type="number" 
+                        name="price" 
+                        id="price" 
+                        class="container__forms__input" 
+                        data-tipo="price" 
+                        data-price
+                        placeholder="Precio del Producto" 
+                        required>
                     <span class="input-message-error"></span>
                 </div>
                 <div class="input-container">
-                    <textarea class="container__forms__input container__forms__textArea" id="descriptionProduct" data-tipo="descriptionProduct" placeholder="Descripción del producto" required></textarea>
+                    <textarea 
+                        class="container__forms__input container__forms__textArea" 
+                        id="descriptionProduct" 
+                        data-tipo="descriptionProduct"
+                        placeholder="Descripción del producto" 
+                        data-description
+                        required></textarea>
                     <span class="input-message-error"></span>
                 </div>
                 <button class="container__forms_button btn btnBlue" type="submit">Agregar Producto</button>
@@ -75,16 +112,26 @@
                 </div>
                 <div class="container__footer__contact">
                     <h2 class="container__footer__contact__title">Hable con nosotros</h2>
-                    <form class="container__footer__contact__form" action="./login.html">
+                    <form class="container__footer__contact__form" data-form action="./login.html">
                         <fieldset>
                            <div class="input-container">
                                 <label class="input-label" for="name">Nombre</label>
-                                <input name="name" id="name" type="text" placeholder="Nombre"  data-tipo="name" required>
+                                <input 
+                                   name="name"
+                                   id="name" 
+                                   type="text"
+                                   placeholder="Nombre" 
+                                   data-tipo="name" 
+                                   required>
                                 <span class="input-message-error">Este campo no es valido</span>
                             </div>
                             <div class="input-container">
                                 <label class="input-label" for="inputMessage">Mensaje</label>
-                                <textarea id="inputMessage"  placeholder="Escribe tu mensaje"  data-tipo="message" required></textarea>
+                                <textarea 
+                                   id="inputMessage" 
+                                   placeholder="Escribe tu mensaje"  
+                                   data-tipo="message" 
+                                   required></textarea>
                                 <span class="input-message-error">Este campo no es valido</span>
                             </div>
                             <button type="submit" class="btn btnBlue">Enviar mensaje</button>
@@ -97,7 +144,8 @@
         </div>
     </footer>
     <script type="module" src="index.js"></script>
+    <script type="module" src="./controllers/registerProduct.controller.js"></script>
     <script type="module" src="./js/newProduct.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>

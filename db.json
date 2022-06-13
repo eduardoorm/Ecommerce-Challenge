@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "category": "new jordan",
+      "name": "Chompas",
+      "price": "200",
+      "id": "3269e0a3-321f-4302-b09f-0f6dca9e44bd",
+      "description": "descripcion del producto"
+    },
+    {
+      "category": "New",
+      "name": "New",
+      "price": "200",
+      "description": "nameMayus",
+      "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
+    },
+    {
+      "category": "Test",
+      "name": "Test",
+      "price": "200",
+      "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
+    },
+    {
+      "category": "Test",
+      "name": "Test",
+      "price": "200",
+      "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
+    },
+    {
+      "category": "Test",
+      "name": "Test",
+      "price": "200",
+      "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
+    },
+    {
+      "category": "New",
+      "name": "New",
+      "price": "22424",
+      "description": "nameMayus",
+      "id": "36985835-ba53-46cb-9179-1ef8a7e905a9"
+    }
+  ]
+}

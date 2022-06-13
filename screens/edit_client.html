@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eccomerce</title>
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body> 
+    <nav>
+        <div class="container__navbar">
+            <div class="container__navbar__left">
+                <a href="../index.html">
+                    <div class="left__title">
+                        <img src="../images/play.png">
+                        <h1><span class="blue">Alura</span><span class="black">Geek</span></h1>
+                    </div>
+                </a>
+                <div class="container__navbar__left__search">
+                    
+                    <input type="search" class="bg_Gray inputSearch" placeholder="¿Qué deseas buscar?">
+                    <img src="../images/search.png">
+                </div>
+            </div> 
+            <div class="container__navbar__right">
+            <a href="login.html"> <button class="btn btnLogin">Login</button></a>
+            </div>
+        </div>
+    </nav>
+    <main>
+    <section>
+        <div class="container__addNewProduct">
+            <form class="container__forms container__addNewProduct__form" data-form action="./products.html">
+                <p class="container__addNewProduct__title">Editar producto</p>
+                <div class="input-container">
+                    <div class="container__forms__image">
+                        <label for="src-file" class="drag-image">Arrastre para agregar una imagen para el producto</label>
+                        <p class="text-center">O</p>
+                        <label for="src-file" class="btn__searchImage">Busque en su computador</label>
+                        <input
+                           class="input-file" 
+                           type="file" 
+                           name="file" 
+                           id="src-file"  
+                           data-url
+                           required>
+                    </div>
+                    <img src="" class="url-image">
+                    <div class="url-file"></div>
+                </div>
+                <div class="input-container">
+                    <input 
+                        type="text"   
+                        name="category" 
+                        id="category" 
+                        class="container__forms__input" 
+                        data-tipo="category" 
+                        data-category
+                        placeholder="Categoria" 
+                        required> 
+                    <span class="input-message-error"></span>
+                </div>
+                <div class="input-container">
+                    <input 
+                        type="text"  
+                        name="nameProduct" 
+                        id="nameProduct" 
+                        class="container__forms__input" 
+                        data-tipo="nameProduct" 
+                        data-product
+                        placeholder="Nombre del Producto" 
+                        required>
+                    <span class="input-message-error"></span>
+                </div>
+                <div class="input-container">
+                    <input 
+                        type="number" 
+                        name="price" 
+                        id="price" 
+                        class="container__forms__input" 
+                        data-tipo="price" 
+                        data-price
+                        placeholder="Precio del Producto" 
+                        required>
+                    <span class="input-message-error"></span>
+                </div>
+                <div class="input-container">
+                    <textarea 
+                        class="container__forms__input container__forms__textArea" 
+                        id="descriptionProduct" 
+                        data-tipo="descriptionProduct"
+                        data-description
+                        placeholder="Descripción del producto" 
+                        required></textarea>
+                    <span class="input-message-error"></span>
+                </div>
+                <button class="container__forms_button btn btnBlue" type="submit">Editar Producto</button>
+            </form>
+        </div>
+    </section>        
+    </main>
+    <script type="module" src="../controllers/update.controller.js"></script>
+    <script type="module" src="../js/newProduct.js"></script>
+</body>
+</html>
