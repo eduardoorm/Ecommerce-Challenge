@@ -67,7 +67,7 @@ a{
 .container__products__header{
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 .container__products__header__title{
@@ -598,5 +598,20 @@ input[type="file"]{
     .btnBlue{
         width: 60%;
         margin:auto;
+    }
+
+    /*all products*/
+    .container__products{
+        padding: 1em;
+    }
+    .btnBlue{
+        width: 100%;
+    }
+    /*add produc*/
+    .drag-image,.container__forms__image>p{
+        display: none;
+    }
+    .btn__searchImage{
+        margin: 0;
     }
 }
