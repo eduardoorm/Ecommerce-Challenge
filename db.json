@@ -1,39 +1,39 @@
 {
   "products": [
     {
-      "category": "new jordan",
+      "category": "star wars",
       "name": "Chompas",
       "price": "200",
       "id": "3269e0a3-321f-4302-b09f-0f6dca9e44bd",
       "description": "descripcion del producto"
     },
     {
-      "category": "New",
+      "category": "consolas",
       "name": "New",
       "price": "200",
       "description": "nameMayus",
       "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
     },
     {
-      "category": "Test",
+      "category": "diversos",
       "name": "Test",
       "price": "200",
       "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
     },
     {
-      "category": "Test",
+      "category": "consolas",
       "name": "Test",
       "price": "200",
       "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
     },
     {
-      "category": "Test",
+      "category": "diversos",
       "name": "Test",
       "price": "200",
       "id": "78841f5f-33fe-480b-af0d-2b5bbdd648e1"
     },
     {
-      "category": "New",
+      "category": "star wars",
       "name": "New",
       "price": "22424",
       "description": "nameMayus",

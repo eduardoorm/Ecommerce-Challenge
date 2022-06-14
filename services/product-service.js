@@ -22,8 +22,6 @@ const newProduct = (category,name,price,description)=>{
     })
 }
 
-
-
 const deleteProduct = (id)=>{
     return fetch(`http://localhost:3000/products/${id}`,{
         method:"DELETE",

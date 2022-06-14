@@ -9,6 +9,7 @@ a{
 
 .container__navbar{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 2em 10em;
 }
@@ -189,6 +190,7 @@ a{
 .container__footer__contact__title{
     font-weight: 600;
     width: 100%;
+    margin-bottom: 0.5em;
 }
 .container__footer__contact__form{
     width: 100%;
@@ -221,7 +223,6 @@ a{
 
 .container__banner{
     width: 100%;
-    border:1px solid;
     height: 40vh;
     background-image: url("images/Hero.png");
     background-size: cover;
@@ -284,6 +285,7 @@ a{
 }
 .container__category__item{
     line-height: 25px;
+    margin-bottom: 1em;
 }
 .container__category__header__title{
     font-size: 35px;
@@ -509,4 +511,84 @@ input[type="file"]{
 
 .container__products__galery__item__price{
     font-weight: 600;
+}
+.container__category__item > img{
+    width: 100%;
+}
+@media screen and (max-width:479px){
+    .container__category__galery{
+        justify-content: space-around;
+    }
+    .container__category{
+        padding: 1em;
+    }
+    .container__category__item{
+        width: 45%;
+    }
+    .container__category__item,.container__footer{
+        display: block;
+        height: auto;
+        padding:0em;
+    }
+    .container__footer{
+        padding: 1em 0em;
+    }
+    .container__footer__pages,.container__footer__contact{
+        width: 100%;
+    }
+    .container__footer__contact{
+        padding: 1em
+    }
+    .container__footer__pages{
+        text-align: center;
+        margin: 1.5em 0em;
+    }
+    .footer__left__title{
+        justify-content: center;
+        width:100%
+    }
+    .container__footer__pages> p:nth-child(2n){
+        margin: 1em 0em;
+    }
+    .container__banner__info {
+        width: 100%;
+    }
+    .continer__banner__title{
+        font-size: 1.5em;
+    }
+    .continer__banner__subtitle{
+        font-size: 0.8em;
+    }
+    .container__banner{
+        height: 25vh;
+        border:1px solid;
+        background-position-x: -170px;
+        background-position-y: 0px;
+    }
+    /*navbar*/
+    .container__navbar{
+        padding: 0em;
+    }
+    .container__navbar__left{
+        width: 54%;
+    }
+    .container__navbar__left__search{
+        width: auto;
+    }
+    .inputSearch{
+        display: none;
+    }
+    .left__title {
+
+    }
+    .container__navbar{
+        margin-bottom: 1em;
+        padding: 1em;
+    }
+    .left__title__img{
+        height: 100%;
+    }
+    .btnLogin{
+        width: 10em;
+    }
 }

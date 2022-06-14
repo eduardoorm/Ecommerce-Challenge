@@ -1,5 +1,5 @@
 import { productServices } from "../services/product-service.js";
-const form = document.querySelector("[data-form");
+const form = document.querySelector("[data-form]");
 
 const getInformation = ()=>{
     const url = new URL(window.location);
