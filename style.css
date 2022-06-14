@@ -366,6 +366,7 @@ a{
 /*Detail Product*/
 .container__detail{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 70vh;
     padding: 2em 10em;
@@ -613,5 +614,19 @@ input[type="file"]{
     }
     .btn__searchImage{
         margin: 0;
+    }
+    .container__detail {
+        padding: 0em;
+        height: auto;
+    }
+    .container__detail__img,.container__detail__info {
+        width: 100%;
+    }
+    .container__detail__img {
+        height: 13em;
+        background-position-y:60%;
+    }
+    .container__detail__info{
+        padding: 1em;
     }
 }
