@@ -579,7 +579,7 @@ input[type="file"]{
         display: none;
     }
     .left__title {
-
+        font-size:0.8em
     }
     .container__navbar{
         margin-bottom: 1em;
