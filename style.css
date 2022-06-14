@@ -591,4 +591,12 @@ input[type="file"]{
     .btnLogin{
         width: 10em;
     }
+    /*Login*/
+    .container__forms {
+        width: 80%;
+    }
+    .btnBlue{
+        width: 60%;
+        margin:auto;
+    }
 }
